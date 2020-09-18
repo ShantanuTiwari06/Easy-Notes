@@ -71,6 +71,11 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="descriptionLabel" destination="klb-jo-vxX" id="TXS-7j-BSu"/>
+                                    <outlet property="noteDescriptionLabel" destination="klb-jo-vxX" id="V65-zl-Akc"/>
+                                    <outlet property="noteImageView" destination="LlW-84-fEs" id="XLq-B3-3vI"/>
+                                    <outlet property="noteNameLabel" destination="or9-XE-KP9" id="m1x-aS-l2q"/>
+                                    <outlet property="shadowView" destination="xfM-FU-0x5" id="Hsg-19-xyF"/>
                                     <segue destination="FaQ-IN-KbE" kind="show" identifier="showNote" id="nGO-eg-pMh"/>
                                 </connections>
                             </tableViewCell>
@@ -90,12 +95,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3cg-Pd-o41" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2240.8000000000002" y="-170.46476761619192"/>
+            <point key="canvasLocation" x="2241" y="-170"/>
         </scene>
         <!--Note Details-->
         <scene sceneID="XOU-09-qpE">
             <objects>
-                <viewController id="FaQ-IN-KbE" sceneMemberID="viewController">
+                <viewController id="FaQ-IN-KbE" customClass="ViewController" customModule="Notes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qi1-s5-0jd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -164,9 +169,20 @@
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="8cr-Bl-oHw"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="Mhe-jH-jrX"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="noteDescriptionLabel" destination="5rV-Hm-tJz" id="uzW-oG-z2N"/>
+                        <outlet property="noteImageView" destination="o3j-is-Wi0" id="09i-LY-xBl"/>
+                        <outlet property="noteImageViewView" destination="SIl-w3-p4h" id="6Ri-9L-hPN"/>
+                        <outlet property="noteInfoView" destination="QJ4-cQ-Pxx" id="viD-o2-VfI"/>
+                        <outlet property="noteNameLabel" destination="MFq-3X-ul5" id="WQ0-rk-rtL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RmV-Cb-Zco" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="pZV-a1-eui"/>
+                <tapGestureRecognizer id="pZV-a1-eui">
+                    <connections>
+                        <action selector="pickImageButtonWasPressed:" destination="FaQ-IN-KbE" id="TgP-rO-XKY"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3032.8000000000002" y="-170.46476761619192"/>
         </scene>
