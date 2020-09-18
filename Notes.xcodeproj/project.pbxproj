@@ -13,6 +13,8 @@
 		A62579C3251282B600F5C27B /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A62579C1251282B600F5C27B /* Notes.xcdatamodeld */; };
 		A62579C5251282B800F5C27B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A62579C4251282B800F5C27B /* Assets.xcassets */; };
 		A62579C8251282B800F5C27B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A62579C6251282B800F5C27B /* LaunchScreen.storyboard */; };
+		A6413EDA2513DBDF00153305 /* NoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6413ED92513DBDF00153305 /* NoteTableViewController.swift */; };
+		A6BDC75C251474E4008E84DB /* NotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BDC75B251474E4008E84DB /* NotesTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		A62579C4251282B800F5C27B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A62579C7251282B800F5C27B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A62579C9251282B800F5C27B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6413ED92513DBDF00153305 /* NoteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewController.swift; sourceTree = "<group>"; };
+		A6BDC75B251474E4008E84DB /* NotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				A62579BA251282B600F5C27B /* AppDelegate.swift */,
+				A6413ED92513DBDF00153305 /* NoteTableViewController.swift */,
 				A62579BC251282B600F5C27B /* ViewController.swift */,
 				A62579BE251282B600F5C27B /* Main.storyboard */,
 				A62579C4251282B800F5C27B /* Assets.xcassets */,
 				A62579C6251282B800F5C27B /* LaunchScreen.storyboard */,
 				A62579C9251282B800F5C27B /* Info.plist */,
 				A62579C1251282B600F5C27B /* Notes.xcdatamodeld */,
+				A6BDC75B251474E4008E84DB /* NotesTableViewCell.swift */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -139,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A62579BD251282B600F5C27B /* ViewController.swift in Sources */,
+				A6413EDA2513DBDF00153305 /* NoteTableViewController.swift in Sources */,
+				A6BDC75C251474E4008E84DB /* NotesTableViewCell.swift in Sources */,
 				A62579C3251282B600F5C27B /* Notes.xcdatamodeld in Sources */,
 				A62579BB251282B600F5C27B /* AppDelegate.swift in Sources */,
 			);
