@@ -35,6 +35,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UINavigationControl
         
         // Load Data
         if let note = note {
+            print("notes")
             noteNameLabel.text = note.noteName
             noteDescriptionLabel.text = note.noteDescription
             noteImageView.image = UIImage(data: note.noteImage! as Data)
